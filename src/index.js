@@ -17,3 +17,12 @@ export const brainCalcStart = (brainGameCalc, name) => {
     }
     console.log(`Congratulations, ${name}!`);
 }
+
+export const brainGcdStart = (brainGcd, name) => {
+    for (let i = 0; i < repeats; i += 1) {
+        if (brainGcd(name) === 0) {
+            return 0;
+        }
+    }
+    console.log(`Congratulations, ${name}!`);
+}

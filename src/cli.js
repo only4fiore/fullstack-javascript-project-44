@@ -11,3 +11,9 @@ export const lose = (answer, correctAnswer, name) => {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
     console.log(`Let's try again, ${name}!`);
 }
+export const loseBrainGcd = (answer, correctAnswer, name) => {
+    if (answer !== correctAnswer) {
+        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+        console.log(`Let's try again, ${name}!`);
+    } 
+}
