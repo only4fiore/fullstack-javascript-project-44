@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { loseBrainGcd } from '../src/cli.js';
+import { lose } from '../src/cli.js';
 import { brainGamesStart } from '../src/index.js';
 import { user } from '../src/cli.js';
 
@@ -25,10 +25,10 @@ export const brainGcd = () => {
         console.log('Correct!');
         return 1;
     }
-    loseBrainGcd(answer, correctAnswer, name);
+    lose(answer, correctAnswer, name);
   return 0;
 }
 
-const brainGcdStart = brainGcd;
+const gameName = brainGcd;
 const name = user();
-brainGamesStart(brainGcdStart, name);
+brainGamesStart(gameName, name);

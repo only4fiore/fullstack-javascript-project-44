@@ -1,28 +1,10 @@
 const repeats = 3;
 
-export const brainGamesStart = (brainGame, name) => {
+export const brainGamesStart = (gameName, name) => {
     for (let i = 0; i < repeats; i += 1) {
-        if (brainGame(name) === 0) {
+        if (gameName(name) === 0) {
             return 0;
-        }
     }
     console.log(`Congratulations, ${name}!`);
-}
-
-export const brainCalcStart = (brainGameCalc, name) => {
-    for (let i = 0; i < repeats; i += 1) {
-        if (brainGameCalc(name) === 0) {
-            return 0;
-        }
     }
-    console.log(`Congratulations, ${name}!`);
-}
-
-export const brainGcdStart = (brainGcd, name) => {
-    for (let i = 0; i < repeats; i += 1) {
-        if (brainGcd(name) === 0) {
-            return 0;
-        }
-    }
-    console.log(`Congratulations, ${name}!`);
 }

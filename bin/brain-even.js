@@ -17,7 +17,7 @@ export const brainEven = (name) => {
   return 0;
 }
 
-const brainGame = brainEven;
+const gameName = brainEven;
 const name = user();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
-brainGamesStart(brainGame, name);
+brainGamesStart(gameName, name);

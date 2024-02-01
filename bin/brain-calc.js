@@ -28,7 +28,7 @@ export const brainCalc = () => {
   return 0;
 }
 
-const brainGameCalc = brainCalc;
+const gameName = brainCalc;
 const name = user();
 console.log('What is the result of the expression?');
-brainGamesStart(brainGameCalc, name);
+brainGamesStart(gameName, name);
