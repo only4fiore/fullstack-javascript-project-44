@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { lose } from '../src/cli.js';
-import { brainGamesStart } from '../src/index.js';
-import { user } from '../src/cli.js';
+import { lose, user } from '../src/cli.js';
+import brainGamesStart from '../src/index.js';
 
-export const brainEven = (name) => {
+export default function brainEven(name) {
   const number = Math.floor(Math.random() * 100);
   console.log(`Question: ${number}`);
   const answer = readlineSync.question('Your answer: ');
@@ -12,7 +11,7 @@ export const brainEven = (name) => {
   if (answer === correctAnswer) {
     console.log('Correct!');
     return 1;
-  } 
+  }
   lose(answer, correctAnswer, name);
   return 0;
 }
