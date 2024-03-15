@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 import { lose, user } from '../src/cli.js';
 import brainGamesStart from '../src/index.js';
 
-export default function brainCalc() {
+export default function brainCalc(name) {
   const znaki = ['+', '-', '*'];
   const number = Math.floor(Math.random() * 100);
   const numberTwo = Math.floor(Math.random() * 100);
@@ -23,7 +23,7 @@ export default function brainCalc() {
     console.log('Correct!');
     return 1;
   }
-  lose(answer, correctAnswer);
+  lose(answer, correctAnswer, name);
   return 0;
 }
 

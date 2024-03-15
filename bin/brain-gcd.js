@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 import { lose, user } from '../src/cli.js';
 import brainGamesStart from '../src/index.js';
 
-export default function brainGcd() {
+export default function brainGcd(name) {
   let a = Math.floor(Math.random() * 100);
   let b = Math.floor(Math.random() * 100);
   console.log('Find the greatest common divisor of given numbers.');
@@ -22,7 +22,7 @@ export default function brainGcd() {
     console.log('Correct!');
     return 1;
   }
-  lose(answer, correctAnswer);
+  lose(answer, correctAnswer, name);
   return 0;
 }
 

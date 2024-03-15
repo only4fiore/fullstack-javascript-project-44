@@ -15,7 +15,7 @@ export default function isPrime(num) {
   return 'yes';
 }
 
-function brainPrime() {
+function brainPrime(name) {
   const number = Math.floor(Math.random() * 101);
   const correctAnswer = isPrime(number);
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
@@ -25,7 +25,7 @@ function brainPrime() {
     console.log('Correct!');
     return 1;
   }
-  lose(answer, correctAnswer);
+  lose(answer, correctAnswer, name);
   return 0;
 }
 
