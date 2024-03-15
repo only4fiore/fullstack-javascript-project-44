@@ -9,7 +9,7 @@ export const brainCalc = () => {
     const number = Math.floor(Math.random() * 100);
     const numberTwo = Math.floor(Math.random() * 100);
     const randomZnak = Math.floor(Math.random() * 2);
-    console.log(`Question: ${number}${znaki[randomZnak]}${numberTwo}`);
+    console.log(`Question: ${number} ${znaki[randomZnak]} ${numberTwo}`);
     const answer = parseInt(readlineSync.question('Your answer: '));
     let correctAnswer = 0;
     if (randomZnak === 0 ) {
